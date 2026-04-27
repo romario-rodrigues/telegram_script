@@ -1,0 +1,27 @@
+# Ignorar pastas virtuais e de cache do Python
+venv/
+__pycache__/
+*.pyc
+
+# Ignorar a pasta gigante dos vídeos
+Curso_Ingles_Completo/
+
+# === SEGURANÇA ===
+# Ignorar o arquivo de sessão (CONTÉM SEU LOGIN - MUITO IMPORTANTE)
+*.session
+
+# Opcional: Ignorar listas de chats pessoais
+lista_chats.txt
+# Ignorar as pastas virtuais e caches
+baixar_curso/
+__pycache__/
+
+# Ignorar o banco de dados da sua conta do Telegram
+*.session
+*.session-journal
+
+# Ignorar vídeos caso sejam baixados aqui sem querer
+*.mp4
+*.mkv
+*.temp
+Cursos_Telegram/

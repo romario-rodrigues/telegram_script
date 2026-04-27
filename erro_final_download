@@ -1,0 +1,12 @@
+   📁 Pasta: Android Hacking Pro/
+Unhandled exception from keepalive_handle after cancelling <class '_asyncio.Task'> (<Task finished name='Task-7' coro=<UpdateMethods._keepalive_loop() done, defined at /home/romario/Documents/telegram_script/baixar_curso/lib/python3.13/site-packages/telethon/client/updates.py:516> exception=OperationalError('disk I/O error')>)
+Traceback (most recent call last):
+  File "/home/romario/Documents/telegram_script/baixar_curso/lib/python3.13/site-packages/telethon/helpers.py", line 176, in _cancel
+    await task
+  File "/home/romario/Documents/telegram_script/baixar_curso/lib/python3.13/site-packages/telethon/client/updates.py", line 554, in _keepalive_loop
+    await utils.maybe_async(self.session.save())
+                            ~~~~~~~~~~~~~~~~~^^
+  File "/home/romario/Documents/telegram_script/baixar_curso/lib/python3.13/site-packages/telethon/sessions/sqlite.py", line 254, in save
+    self._conn.commit()
+    ~~~~~~~~~~~~~~~~~^^
+sqlite3.OperationalError: disk I/O error

@@ -1,0 +1,46 @@
+# Configuração do curso
+curso:
+  nome: "Linuxtips - Python Base #Programação"
+  link: "https://t.me/+VOMr7NaChN8xMDRh"
+
+# Mapeamento dos módulos (aula_inicio, aula_fim, nome_pasta)
+modulos:
+  - inicio: 1
+    fim: 9
+    nome: "01 - Introdução a programação e ao Python"
+  - inicio: 10
+    fim: 19
+    nome: "02 - Tipos de dados e protocolos"
+  - inicio: 20
+    fim: 30
+    nome: "03 - Input-Output, Algoritmos, Condicionais, Repetições"
+  - inicio: 31
+    fim: 44
+    nome: "04 - Funções, Debugging, Projetos e Bibliotecas"
+  - inicio: 45
+    fim: 55
+    nome: "05 - Testes e Qualidade de Software"
+  - inicio: 56
+    fim: 64
+    nome: "06 - Orientação a Objetos"
+  - inicio: 65
+    fim: 72
+    nome: "07 - Integração com APIs e Bancos de Dados"
+  - inicio: 73
+    fim: 78
+    nome: "08 - Demonstrações de Frameworks para GUI, CLI, API"
+  - inici: 79
+    fim: 80
+    nome: "Extras"
+
+# Padrão de busca das aulas (regex)
+padrao_aula: "#F(\\d+)"
+
+# Extensões suportadas para download
+extensoes_validas:
+  - ".mp4"
+  - ".pdf"
+  - ".zip"
+  - ".mp3"
+  - ".jpg"
+  - ".png"
