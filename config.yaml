@@ -1,7 +1,7 @@
 # Configuração do curso
 curso:
-  nome: "Linuxtips - Python Base #Programação"
-  link: "https://t.me/+VOMr7NaChN8xMDRh"
+  nome: "NOME_DA_PASTA_DO_CURSO"
+  link: "Convite_GRUPO_CURSO"
 
 # Mapeamento dos módulos (aula_inicio, aula_fim, nome_pasta)
 modulos:
