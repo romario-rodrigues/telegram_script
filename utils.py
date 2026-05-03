@@ -42,11 +42,12 @@ def criar_cliente_telegram(nome_sessao="sessao_romario"):
 
 
 def encontrar_pasta(numero_aula, modulos):
-    """Encontra a pasta do módulo baseado no número da aula"""
-    for modulo in modulos:
-        if modulo["inicio"] <= numero_aula <= modulo["fim"]:
-            return modulo["nome"]
-    return "00_Outros_Arquivos"
+    for inicio, fim, nome_pasta in modulos:
+        if inicio <= numero_aula <= fim:
+            return nome_pasta
+
+    # Se a aula não estiver no mapeamento do config.yaml
+    return "00_Sem_Modulo"
 
 
 def limpar_nome_arquivo(texto):
@@ -83,3 +84,11 @@ def formatar_progresso(current, total):
     return (
         f"\r📥 {percentual:.1f}% ({current/1024/1024:.1f}MB / {total/1024/1024:.1f}MB)"
     )
+
+
+async def notificar_telegram(client, mensagem):
+    try:
+        # O 'me' é um atalho do Telethon para as suas Mensagens Salvas
+        await client.send_message("me", mensagem)
+    except Exception as e:
+        print(f"Erro ao tentar enviar notificação: {e}")
